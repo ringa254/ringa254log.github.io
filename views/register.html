@@ -1,0 +1,50 @@
+    
+    <div class="ngdialog-message" align="center">
+    
+        <div class="btn5">
+            <h3>  Karibu Ringa </h3>
+        </div>
+        <br>
+        <div class="text-centered"  style="padding-top: 20px; padding-bottom:10px;">
+         <img src="images/ring1.jpg" height=80 width=80>
+  </div>
+        <!-- <div class="">&nbsp;</div> -->
+        
+        <div class="">
+            <form ng-submit="doRegister()">
+
+            <div class="form-group">
+                    <label class="sr-only" for="firstname">Full Name</label>
+                    <input type="text" class="form-control input-sm" id="firstname" placeholder="Full Name" ng-model="registration.firstname">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="lastname">Phone Number</label>
+                    <input type="text" class="form-control input-sm" id="lastname" placeholder="Phone Number" ng-model="registration.lastname">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="username">Username</label>
+                    <input type="text" class="form-control input-sm" id="username" placeholder="Email" ng-model="registration.username">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="password">Password</label>
+                    <input type="password" class="form-control input-sm" id="password" placeholder="Password" ng-model="registration.password">
+                </div>
+
+                <div class="btn7 ">
+             <p>  By joining Ringa, you agree to the <a ng-click=openTerms() "><span class="b"> Terms of Service  </span></a> and <a ng-click=openPrivacy()><span class="b"> Privacy Policy </span></a>, <br> including <a ng-click=openCookies()><span class="b"> Cookie Use</span>
+             </a>. Others will be able to find you by searching for <br>the email address or phone number you have provided.</p> 
+                </div>
+                
+                <!-- <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="registration.rememberMe"> Remember me
+                    </label>
+                </div> -->
+                <br>
+                <button type="submit" class="btn btn-info btn-sm btn6">Join now</button> <br>
+                 <h6 style=""> <div class="btn4 text-muted"> <p></p>
+                   Already have an account?<a ng-click=openLogin()> <b class="b">Log in</b></a>
+                </div> </h6>
+            </form>
+        </div>
+    </div>
